@@ -194,6 +194,33 @@
     color: #254e70;
     cursor: pointer;
 }
+        .form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #254e70;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9em;
+}
+
+.form-group:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
         /* Mobile адаптация */
         @media (max-width: 700px) {
             body {
@@ -403,6 +430,7 @@
     
 </body>
 </html>
+
 
 
 
