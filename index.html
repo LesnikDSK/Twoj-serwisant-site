@@ -380,16 +380,25 @@ details ul li:hover {
             .map {
                 height: 220px;
             }
-            .price-item {
-        font-size: 14px;
-                      }
+    .price-item {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+        font-size: clamp(12px, 4vw, 16px); /* Автоматическое масштабирование шрифта */
+    }
     .price-name {
-        font-size: 14px;
-        margin-left: 5px
-                      }
+        flex: 1 1 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    }
     .price-value {
-        font-size: 14px;
-                  }
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
         }
     </style>
 </head>
@@ -646,6 +655,7 @@ details ul li:hover {
     
 </body>
 </html>
+
 
 
 
