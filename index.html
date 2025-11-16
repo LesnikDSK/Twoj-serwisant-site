@@ -303,32 +303,22 @@ details ul li:hover {
 }
 
 .price-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background: #f8fafc;
-    border-radius: 8px;
-    box-shadow: none; /* убираем рамки */
-    font-size: 16px;
-    max-width: 100%;
-    
-}
-
-.price-name {
-    font-weight: 500;
-    color: #254e70;
-    flex: 1;
-    white-space: nowrap;
-    overflow: visible;
-    text-overflow: clip;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: clip;
+        display: flex;
+        flex-wrap: nowrap;
     }
-
-.price-value {
-    font-weight: bold;
-    color: #254e70;
-    white-space: nowrap;
-    margin-left: 10px;
-}
+    .price-name {
+        flex: 1 1 auto;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: clip;
+    }
+    .price-value {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
         /* Mobile адаптация */
         @media (max-width: 700px) {
             body {
@@ -655,6 +645,7 @@ details ul li:hover {
     
 </body>
 </html>
+
 
 
 
