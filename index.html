@@ -289,7 +289,30 @@ details ul li:hover {
     font-size: 24px;
     color: #254e70;
 }
-        
+       .price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.price-name {
+    font-weight: 500;
+    color: #254e70;
+}
+
+.price-value {
+    font-weight: bold;
+    color: #254e70;
+} 
         /* Mobile адаптация */
         @media (max-width: 700px) {
             body {
@@ -391,38 +414,130 @@ details ul li:hover {
     <section id="services" class="section">
   <h2>Usługi</h2>
   <details>
-    <summary style="font-weight: bold; cursor: pointer;">Pokaż wszystkie usługi</summary>
+    <summary style="font-weight: bold; cursor: pointer; padding: 10px 16px; background: #254e70; color: white; border-radius: 8px; margin-bottom: 12px;">Pokaż wszystkie usługi</summary>
     <ul class="services">
-      <li>Diagnostyka – Bezpłatna</li>
-      <li>Naprawa po zalaniu – od 250 zł</li>
-      <li>Wymiana klawiatury w laptopie – od 140 zł</li>
-      <li>Naprawa zawiasów – od 60 zł</li>
-      <li>Wymiana ekranu w laptopie – od 130 zł</li>
-      <li>Naprawa MacBook – od 150 zł</li>
-      <li>Wymiana portu ładowania – od 60 zł</li>
-      <li>Wymiana pasty termoprzewodzącej – od 110 zł</li>
-      <li>Konserwacja laptopa – od 130 zł</li>
-      <li>Naprawа BIOS – от 90 zł</li>
-      <li>Składanie PC – od 120 zł</li>
-      <li>Naprawa CPU/GPU – od 290 zł</li>
-      <li>Naprawa/Wymiana ekranu w telefonie – od 100 zł</li>
-      <li>Naprawa mikrofonów/głośników – od 50 zł</li>
-      <li>Naprawa telefonu po zalaniu – od 150 zł</li>
-      <li>Naprawa portu ładowania – od 50 zł</li>
-      <li>Naprawa przycisków – od 40 zł</li>
-      <li>Naprawa tabletów – od 80 zł</li>
-      <li>Naprawa aparatów telefonu – od 80 zł</li>
-      <li>Wymiana baterii – od 100 zł</li>
-      <li>Aktualizacja oprogramowania – od 50 zł</li>
-      <li>Naprawa iPhone – od 80 zł</li>
-      <li>Wymiana baterii iPhone – od 120 zł</li>
-      <li>Czyszczenie głowicy drukarki – od 80 zł</li>
-      <li>Konsultacje IT – od 60 zł</li>
-      <li>Naprawa padów – od 90 zł</li>
-      <li>Naprawa Sony PS4 – od 90 zł</li>
-      <li>Naprawa Sony PS5 – od 130 zł</li>
-      <li>Naprawa Xbox – od 90 zł</li>
-      <li>Naprawa zasilaczy – od 80 zł</li>
+      <div class="price-list">
+    <div class="price-item">
+      <span class="price-name">Naprawa po zalaniu</span>
+      <span class="price-value">od 250 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Wymiana klawiatury w laptopie</span>
+      <span class="price-value">od 140 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa zawiasów</span>
+      <span class="price-value">od 60 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Wymiana ekranu w laptopie</span>
+      <span class="price-value">od 130 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa MacBook</span>
+      <span class="price-value">od 150 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Wymiana portu ładowania</span>
+      <span class="price-value">od 60 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Wymiana pasty termoprzewodzącej</span>
+      <span class="price-value">od 110 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Konserwacja laptopa</span>
+      <span class="price-value">od 130 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa BIOS</span>
+      <span class="price-value">od 90 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Składanie PC</span>
+      <span class="price-value">od 120 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa CPU/GPU</span>
+      <span class="price-value">od 290 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Diagnostyka</span>
+      <span class="price-value">Bezpłatna</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa/Wymiana ekranu w telefonie</span>
+      <span class="price-value">od 100 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa mikrofonów/głośników</span>
+      <span class="price-value">od 50 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa telefonu po zalaniu</span>
+      <span class="price-value">od 150 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa portu ładowania</span>
+      <span class="price-value">od 50 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa przycisków</span>
+      <span class="price-value">od 40 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa tabletów</span>
+      <span class="price-value">od 80 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa aparatów telefonu</span>
+      <span class="price-value">od 80 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Wymiana baterii</span>
+      <span class="price-value">od 100 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Aktualizacja oprogramowania</span>
+      <span class="price-value">od 50 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa iPhone</span>
+      <span class="price-value">od 80 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Wymiana baterii iPhone</span>
+      <span class="price-value">od 120 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Czyszczenie głowicy drukarki</span>
+      <span class="price-value">od 80 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Konsultacje IT</span>
+      <span class="price-value">od 60 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa padów</span>
+      <span class="price-value">od 90 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa Sony PS4</span>
+      <span class="price-value">od 90 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa Sony PS5</span>
+      <span class="price-value">od 130 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa Xbox</span>
+      <span class="price-value">od 90 zł</span>
+    </div>
+    <div class="price-item">
+      <span class="price-name">Naprawa zasilaczy</span>
+      <span class="price-value">od 80 zł</span>
+    </div>
+  </div>
     </ul>
   </details>
 </section>
@@ -515,6 +630,7 @@ details ul li:hover {
     
 </body>
 </html>
+
 
 
 
