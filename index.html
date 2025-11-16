@@ -309,6 +309,7 @@ details ul li:hover {
     border-radius: 8px;
     box-shadow: none; /* убираем рамки */
     font-size: 16px;
+    max-width: 100%;
 }
 
 .price-name {
@@ -316,8 +317,8 @@ details ul li:hover {
     color: #254e70;
     flex: 1;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
+    text-overflow: clip;
 }
 
 .price-value {
@@ -652,6 +653,7 @@ details ul li:hover {
     
 </body>
 </html>
+
 
 
 
