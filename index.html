@@ -319,6 +319,37 @@ details ul li:hover {
         flex: 0 0 auto;
         white-space: nowrap;
     }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 220px;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.caption-input {
+    width: 95%;
+    margin-top: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+        
         /* Mobile адаптация */
         @media (max-width: 700px) {
             body {
@@ -412,6 +443,24 @@ details ul li:hover {
         border: none;
         box-shadow: none;
     }
+.gallery {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .gallery-item {
+        max-width: 98vw;
+        min-width: 0;
+        margin-bottom: 12px;
+    }
+    .gallery-item img {
+        max-width: 100vw;
+        height: auto;
+    }
+    .caption-input {
+        font-size: 13px;
+        width: 98%;
+    }
+            
         }
     </style>
 </head>
@@ -445,9 +494,37 @@ details ul li:hover {
                     <li>💧 Ratunek po zalaniu oraz naprawy po awariach zasilania</li>
                     <li>🧩 Modernizacje i składanie komputerów pod Twoje potrzeby</li>
                 </ul>
-                <h3>jak pracujemy:</h3>
-                <summary style="font-weight: bold; cursor: pointer; padding: 10px 16px; background: #254e70; color: white; border-radius: 8px; margin-bottom: 12px;">Zdjęcia prac</summary>
-            </div>
+                <h3>Jak pracujemy:</h3>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="Foto1.jpg" alt="Фото 1">
+      <input type="text" class="caption-input" placeholder="Подпись к фото (например: Разборка ноутбука)">
+    </div>
+    <div class="gallery-item">
+      <img src="Foto2.jpg" alt="Фото 2">
+      <input type="text" class="caption-input" placeholder="Подпись к фото">
+    </div>
+    <div class="gallery-item">
+      <img src="Foto3.jpg" alt="Фото 3">
+      <input type="text" class="caption-input" placeholder="Подпись к фото">
+    </div>
+    <div class="gallery-item">
+      <img src="Foto4.jpg" alt="Фото 4">
+      <input type="text" class="caption-input" placeholder="Подпись к фото">
+    </div>
+    <div class="gallery-item">
+      <img src="Foto5.jpg" alt="Фото 5">
+      <input type="text" class="caption-input" placeholder="Подпись к фото">
+    </div>
+    <div class="gallery-item">
+      <img src="Foto6.jpg" alt="Фото 6">
+      <input type="text" class="caption-input" placeholder="Подпись к фото">
+    </div>
+    <div class="gallery-item">
+      <img src="Foto7.jpg" alt="Фото 7">
+      <input type="text" class="caption-input" placeholder="Подпись к фото">
+    </div>
+              </div>
         </div>
     </section>
 
@@ -670,6 +747,7 @@ details ul li:hover {
     
 </body>
 </html>
+
 
 
 
