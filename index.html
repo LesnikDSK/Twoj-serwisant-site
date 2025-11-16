@@ -443,23 +443,32 @@ details ul li:hover {
         border: none;
         box-shadow: none;
     }
-.gallery {
-        flex-direction: column;
-        gap: 12px;
-    }
-    .gallery-item {
-        max-width: 98vw;
-        min-width: 0;
-        margin-bottom: 12px;
-    }
-    .gallery-item img {
-        max-width: 100vw;
-        height: auto;
-    }
-    .caption-input {
-        font-size: 13px;
-        width: 98%;
-    }
+.photo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.photo-list li {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.photo-list img {
+    max-width: 96vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 8px;
+}
+
+.caption-input {
+    width: 95%;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
             
         }
     </style>
@@ -498,36 +507,36 @@ details ul li:hover {
                  <summary style="font-weight:500; font-size: 18px; cursor:pointer; margin:12px 0;">
       Pokazywać
     </summary>
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="Foto1.jpg" alt="Фото 1">
-      <input type="text" class="caption-input" placeholder="Laptop przed konserwacją">
-    </div>
-    <div class="gallery-item">
-      <img src="Foto2.jpg" alt="Фото 2">
-      <input type="text" class="caption-input" placeholder="Wyrwany zawias">
-    </div>
-    <div class="gallery-item">
-      <img src="Foto3.jpg" alt="Фото 3">
-      <input type="text" class="caption-input" placeholder="Laptop po naprawie i czyszczeniu">
-    </div>
-    <div class="gallery-item">
-      <img src="Foto4.jpg" alt="Фото 4">
-      <input type="text" class="caption-input" placeholder="Odblokowanie smartfonu Xiaomi">
-    </div>
-    <div class="gallery-item">
-      <img src="Foto5.jpg" alt="Фото 5">
-      <input type="text" class="caption-input" placeholder="Proces czyszczenia laptopa">
-    </div>
-    <div class="gallery-item">
-      <img src="Foto6.jpg" alt="Фото 6">
-      <input type="text" class="caption-input" placeholder="Przyjęcie sprzętu do naprawy">
-    </div>
-    <div class="gallery-item">
-      <img src="Foto7.jpg" alt="Фото 7">
-      <input type="text" class="caption-input" placeholder="Wymiana klawiatury w laptopie">
-    </div>
-              </div>
+      <ul class="photo-list">
+      <li>
+        <img src="Foto1.jpg" alt="Фото 1">
+        <input type="text" class="caption-input" placeholder="Laptop przed konserwacją">
+      </li>
+      <li>
+        <img src="Foto2.jpg" alt="Фото 2">
+        <input type="text" class="caption-input" placeholder="Wyrwany zawias">
+      </li>
+      <li>
+        <img src="Foto3.jpg" alt="Фото 3">
+        <input type="text" class="caption-input" placeholder="Laptop po naprawie i czyszczeniu">
+      </li>
+      <li>
+        <img src="Foto4.jpg" alt="Фото 4">
+        <input type="text" class="caption-input" placeholder="Odblokowanie smartfonu Xiaomi">
+      </li>
+      <li>
+        <img src="Foto5.jpg" alt="Фото 5">
+        <input type="text" class="caption-input" placeholder="Proces czyszczenia laptopa">
+      </li>
+      <li>
+        <img src="Foto6.jpg" alt="Фото 6">
+        <input type="text" class="caption-input" placeholder="Przyjęcie sprzętu do naprawy">
+      </li>
+      <li>
+        <img src="Foto7.jpg" alt="Фото 7">
+        <input type="text" class="caption-input" placeholder="Wymiana klawiatury w laptopie">
+      </li>
+    </ul>
         </div>
     </section>
 
@@ -750,6 +759,7 @@ details ul li:hover {
     
 </body>
 </html>
+
 
 
 
